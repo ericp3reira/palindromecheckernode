@@ -1,0 +1,29 @@
+{
+  "name": "palindromechecker",
+  "version": "1.0.0",
+  "description": "A Node palindrome checker with an Angular front-end",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericp3reira/palindromechecker.git"
+  },
+  "keywords": [
+    "palindrome",
+    "node",
+    "angular"
+  ],
+  "author": "Eric Pereira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericp3reira/palindromechecker/issues"
+  },
+  "homepage": "https://github.com/ericp3reira/palindromechecker#readme",
+  "dependencies": {
+    "body-parser": "^1.8.1",
+    "express": "^4.14.0"
+  }
+}
