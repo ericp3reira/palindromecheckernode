@@ -40,22 +40,32 @@
 
 </head>
 <body ng-app="palindromeChecker" ng-controller="MainCtrl">
-    <div class="container">
-       
-         <div id="mainForm">
-            <form ng-submit="addWord()">
-              <input id="wordEnter" type="text" ng-model="data.title" placeholder="Type here your word/phrase">
-              <p><button id="check" class="btn btn-lg btn-success" type="submit">Check</button></p>
-            </form>
-         </div>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          Palindrome Checker
+        </a>
+      </div>
+    </div>
+  </nav>
   
-         <div id="result">
-           <p>{{data.title}}</p><hr>
-           <div ng-repeat="word in words | reverse">
-              <p>{{word.title}} {{word.result}}</p><hr>
-           </div>
-         </div>
-      
+  <div class="container">
+
+    <div id="mainForm">
+      <form ng-submit="addWord()">
+        <input id="wordEnter" type="text" ng-model="data.title" placeholder="Type here your word/phrase">
+        <p><button id="check" class="btn btn-lg btn-success" type="submit">Check</button></p>
+      </form>
+    </div>
+
+    <div id="result">
+      <p>{{data.title}}</p><hr>
+      <div ng-repeat="word in words | reverse">
+        <p>{{word.title}} {{word.result}}</p><hr>
+      </div>
+    </div>
+
   </div>  
 </body>
 </html>
